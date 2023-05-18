@@ -98,7 +98,7 @@ const LocationAndRecommended = ({isLoggedIn}) => {
 
                 {/* see more */}
                 <div className='mt-[2.5rem] text-right text-[12px]'>
-                    <a href='#' className='text-freeAndJoinButtonColor'>See More...</a>
+                    <p className='text-freeAndJoinButtonColor'>See More...</p>
                 </div>
                 
             </div>
