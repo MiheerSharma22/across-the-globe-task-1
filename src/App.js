@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState} from 'react';
+import Header from './components/Header'
+import ComputerEngineeringBanner from './components/ComputerEngineeringBanner'
+import MainSection from './components/MainSection'
 
 function App() {
+  // defining state variables and their setter functions using useState hook
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [groupJoined , setGroupJoined] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='min-w-screen min-h-screen'>
+      <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+      <ComputerEngineeringBanner/>
+      <MainSection groupJoined={groupJoined}  setGroupJoined={setGroupJoined} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
     </div>
   );
 }
