@@ -6,7 +6,7 @@ import signUpImage from '../assets/signUpImage.png'
 import {createPortal} from 'react-dom'
 
  function Modal ( {isLoggedIn , onClose} )  {
-    const [isSignInClicked, setIsSignInClicked] = useState(false);
+    // const [isSignInClicked, setIsSignInClicked] = useState(false);
 
   return (
     !isLoggedIn && createPortal(

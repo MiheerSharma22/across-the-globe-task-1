@@ -38,13 +38,13 @@ const Card = ({card, id}) => {
         <div className='p-[20px]'>
             {/* Type of card */}
             {
-                card.type === 'Article' && <img src={article} alt={card.type} className='h-[25px]'/> ||
+                (card.type === 'Article' && <img src={article} alt={card.type} className='h-[25px]'/>) ||
 
-                card.type === 'Education' && <img src={education} alt={card.type} className='h-[25px]'/> ||
+                (card.type === 'Education' && <img src={education} alt={card.type} className='h-[25px]'/>) ||
 
-                card.type === 'Meetup' && <img src={meetup} alt={card.type} className='h-[25px]'/> ||
+                (card.type === 'Meetup' && <img src={meetup} alt={card.type} className='h-[25px]'/>) ||
 
-                card.type === 'Job' && <img src={job} alt={card.type} className='h-[25px]'/>
+                (card.type === 'Job' && <img src={job} alt={card.type} className='h-[25px]'/>)
             }
 
             {/* title of card */}
